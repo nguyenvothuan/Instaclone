@@ -14,9 +14,16 @@
 		8D47265C296CDE9E00157E57 /* Instaclone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D47265A296CDE9E00157E57 /* Instaclone.xcdatamodeld */; };
 		8D47265E296CDE9F00157E57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D47265D296CDE9F00157E57 /* Assets.xcassets */; };
 		8D472661296CDE9F00157E57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D47265F296CDE9F00157E57 /* LaunchScreen.storyboard */; };
+		8D47266A296CDF0400157E57 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D472669296CDF0400157E57 /* FormField.swift */; };
+		8D47266D296CEAF300157E57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D47266C296CEAF300157E57 /* ContentView.swift */; };
+		8D47266F296CEC2F00157E57 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D47266E296CEC2F00157E57 /* SignInView.swift */; };
+		8D472671296CEE3600157E57 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D472670296CEE3600157E57 /* ButtonModifier.swift */; };
+		8D96B4E2296F8EAE0061DC38 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D96B4E1296F8EAE0061DC38 /* ImagePicker.swift */; };
+		8DCF9FB4296D11D00047E111 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF9FB3296D11D00047E111 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D40D0CA296D055A000C2589 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8D47264E296CDE9E00157E57 /* Instaclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instaclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D472651296CDE9E00157E57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D472653296CDE9E00157E57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +33,12 @@
 		8D47265D296CDE9F00157E57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D472660296CDE9F00157E57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D472662296CDE9F00157E57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D472669296CDF0400157E57 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		8D47266C296CEAF300157E57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8D47266E296CEC2F00157E57 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		8D472670296CEE3600157E57 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		8D96B4E1296F8EAE0061DC38 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8DCF9FB3296D11D00047E111 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,9 @@
 		8D472650296CDE9E00157E57 /* Instaclone */ = {
 			isa = PBXGroup;
 			children = (
+				8D96B4E0296F8E900061DC38 /* Utils */,
+				8D47266B296CE17800157E57 /* View */,
+				8D472668296CDEC900157E57 /* Component */,
 				8D472651296CDE9E00157E57 /* AppDelegate.swift */,
 				8D472653296CDE9E00157E57 /* SceneDelegate.swift */,
 				8D472655296CDE9E00157E57 /* ViewController.swift */,
@@ -66,8 +82,36 @@
 				8D47265F296CDE9F00157E57 /* LaunchScreen.storyboard */,
 				8D472662296CDE9F00157E57 /* Info.plist */,
 				8D47265A296CDE9E00157E57 /* Instaclone.xcdatamodeld */,
+				8D40D0CA296D055A000C2589 /* README.md */,
 			);
 			path = Instaclone;
+			sourceTree = "<group>";
+		};
+		8D472668296CDEC900157E57 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8D472669296CDF0400157E57 /* FormField.swift */,
+				8D472670296CEE3600157E57 /* ButtonModifier.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		8D47266B296CE17800157E57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D47266E296CEC2F00157E57 /* SignInView.swift */,
+				8DCF9FB3296D11D00047E111 /* SignUpView.swift */,
+				8D47266C296CEAF300157E57 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D96B4E0296F8E900061DC38 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8D96B4E1296F8EAE0061DC38 /* ImagePicker.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D47266A296CDF0400157E57 /* FormField.swift in Sources */,
+				8D47266F296CEC2F00157E57 /* SignInView.swift in Sources */,
+				8D472671296CEE3600157E57 /* ButtonModifier.swift in Sources */,
 				8D472656296CDE9E00157E57 /* ViewController.swift in Sources */,
+				8D47266D296CEAF300157E57 /* ContentView.swift in Sources */,
 				8D472652296CDE9E00157E57 /* AppDelegate.swift in Sources */,
 				8D472654296CDE9E00157E57 /* SceneDelegate.swift in Sources */,
+				8D96B4E2296F8EAE0061DC38 /* ImagePicker.swift in Sources */,
+				8DCF9FB4296D11D00047E111 /* SignUpView.swift in Sources */,
 				8D47265C296CDE9E00157E57 /* Instaclone.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
