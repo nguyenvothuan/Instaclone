@@ -20,6 +20,7 @@
 		8D38EB5D29737C7300669EC9 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D38EB5C29737C7300669EC9 /* SearchResultViewController.swift */; };
 		8D38EB5F29737C9A00669EC9 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D38EB5E29737C9A00669EC9 /* PostEditorViewController.swift */; };
 		8D38EB6129737CA600669EC9 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D38EB6029737CA600669EC9 /* PublishPostViewController.swift */; };
+		8D38EB7029739D4E00669EC9 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D38EB6F29739D4E00669EC9 /* GoogleService-Info (1).plist */; };
 		8D472652296CDE9E00157E57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D472651296CDE9E00157E57 /* AppDelegate.swift */; };
 		8D472654296CDE9E00157E57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D472653296CDE9E00157E57 /* SceneDelegate.swift */; };
 		8D472656296CDE9E00157E57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D472655296CDE9E00157E57 /* ViewController.swift */; };
@@ -33,9 +34,11 @@
 		8D472671296CEE3600157E57 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D472670296CEE3600157E57 /* ButtonModifier.swift */; };
 		8D96B4E2296F8EAE0061DC38 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D96B4E1296F8EAE0061DC38 /* ImagePicker.swift */; };
 		8DCF9FB4296D11D00047E111 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF9FB3296D11D00047E111 /* SignUpView.swift */; };
+		F8137F4F6EC943E155F0C22F /* Pods_Instaclone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D10681C31AFF3CB17DE28C6 /* Pods_Instaclone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D10681C31AFF3CB17DE28C6 /* Pods_Instaclone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instaclone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D38EB4629737AB700669EC9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8D38EB4829737B4400669EC9 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		8D38EB4A29737B5400669EC9 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		8D38EB5C29737C7300669EC9 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		8D38EB5E29737C9A00669EC9 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		8D38EB6029737CA600669EC9 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
+		8D38EB6F29739D4E00669EC9 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../../../../../Downloads/GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		8D40D0CA296D055A000C2589 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8D47264E296CDE9E00157E57 /* Instaclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instaclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D472651296CDE9E00157E57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 		8D472670296CEE3600157E57 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 		8D96B4E1296F8EAE0061DC38 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		8DCF9FB3296D11D00047E111 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B0A89E9D508593F2A720D0CD /* Pods-Instaclone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instaclone.release.xcconfig"; path = "Target Support Files/Pods-Instaclone/Pods-Instaclone.release.xcconfig"; sourceTree = "<group>"; };
+		FDB36EBC5707ED882319F46E /* Pods-Instaclone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instaclone.debug.xcconfig"; path = "Target Support Files/Pods-Instaclone/Pods-Instaclone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +78,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8137F4F6EC943E155F0C22F /* Pods_Instaclone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AAA512337F41E1CCA4665D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D10681C31AFF3CB17DE28C6 /* Pods_Instaclone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8276C04C05986C9F048C7B74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDB36EBC5707ED882319F46E /* Pods-Instaclone.debug.xcconfig */,
+				B0A89E9D508593F2A720D0CD /* Pods-Instaclone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8D38EB42297378F000669EC9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				8D472651296CDE9E00157E57 /* AppDelegate.swift */,
+				8D38EB6F29739D4E00669EC9 /* GoogleService-Info (1).plist */,
 				8D472653296CDE9E00157E57 /* SceneDelegate.swift */,
 			);
 			path = Resources;
@@ -145,6 +170,8 @@
 			children = (
 				8D472650296CDE9E00157E57 /* Instaclone */,
 				8D47264F296CDE9E00157E57 /* Products */,
+				8276C04C05986C9F048C7B74 /* Pods */,
+				3AAA512337F41E1CCA4665D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D472665296CDE9F00157E57 /* Build configuration list for PBXNativeTarget "Instaclone" */;
 			buildPhases = (
+				46C031ABE6A94997F5122A0C /* [CP] Check Pods Manifest.lock */,
 				8D47264A296CDE9E00157E57 /* Sources */,
 				8D47264B296CDE9E00157E57 /* Frameworks */,
 				8D47264C296CDE9E00157E57 /* Resources */,
+				B7EC386261752938AA0B35D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,10 +291,53 @@
 				8D472661296CDE9F00157E57 /* LaunchScreen.storyboard in Resources */,
 				8D47265E296CDE9F00157E57 /* Assets.xcassets in Resources */,
 				8D472659296CDE9E00157E57 /* Main.storyboard in Resources */,
+				8D38EB7029739D4E00669EC9 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46C031ABE6A94997F5122A0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instaclone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7EC386261752938AA0B35D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instaclone/Pods-Instaclone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instaclone/Pods-Instaclone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instaclone/Pods-Instaclone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D47264A296CDE9E00157E57 /* Sources */ = {
@@ -436,6 +508,7 @@
 		};
 		8D472666296CDE9F00157E57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB36EBC5707ED882319F46E /* Pods-Instaclone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +537,7 @@
 		};
 		8D472667296CDE9F00157E57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A89E9D508593F2A720D0CD /* Pods-Instaclone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
