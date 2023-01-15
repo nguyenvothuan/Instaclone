@@ -20,11 +20,12 @@
 		8D38EB5D29737C7300669EC9 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D38EB5C29737C7300669EC9 /* SearchResultViewController.swift */; };
 		8D38EB5F29737C9A00669EC9 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D38EB5E29737C9A00669EC9 /* PostEditorViewController.swift */; };
 		8D38EB6129737CA600669EC9 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D38EB6029737CA600669EC9 /* PublishPostViewController.swift */; };
-		8D38EB7029739D4E00669EC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D38EB6F29739D4E00669EC9 /* GoogleService-Info.plist */; };
 		8D38EB722973A93800669EC9 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D38EB712973A93800669EC9 /* DatabaseManager.swift */; };
 		8D38EB742973AAD000669EC9 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D38EB732973AAD000669EC9 /* AuthManager.swift */; };
 		8D38EB762973AAF900669EC9 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D38EB752973AAF900669EC9 /* StorageManager.swift */; };
 		8D38EB782973B73600669EC9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D38EB772973B73600669EC9 /* Helper.swift */; };
+		8D38EB7A297444D400669EC9 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D38EB79297444D400669EC9 /* Extension.swift */; };
+		8D38EB7E2974470800669EC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D38EB7D2974470800669EC9 /* GoogleService-Info.plist */; };
 		8D472652296CDE9E00157E57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D472651296CDE9E00157E57 /* AppDelegate.swift */; };
 		8D472654296CDE9E00157E57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D472653296CDE9E00157E57 /* SceneDelegate.swift */; };
 		8D472656296CDE9E00157E57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D472655296CDE9E00157E57 /* ViewController.swift */; };
@@ -56,11 +57,12 @@
 		8D38EB5C29737C7300669EC9 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		8D38EB5E29737C9A00669EC9 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		8D38EB6029737CA600669EC9 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
-		8D38EB6F29739D4E00669EC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8D38EB712973A93800669EC9 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		8D38EB732973AAD000669EC9 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		8D38EB752973AAF900669EC9 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		8D38EB772973B73600669EC9 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		8D38EB79297444D400669EC9 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		8D38EB7D2974470800669EC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8D40D0CA296D055A000C2589 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8D47264E296CDE9E00157E57 /* Instaclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instaclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D472651296CDE9E00157E57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,7 +126,8 @@
 				8D38EB712973A93800669EC9 /* DatabaseManager.swift */,
 				8D38EB732973AAD000669EC9 /* AuthManager.swift */,
 				8D38EB752973AAF900669EC9 /* StorageManager.swift */,
-				8D38EB6F29739D4E00669EC9 /* GoogleService-Info.plist */,
+				8D38EB7D2974470800669EC9 /* GoogleService-Info.plist */,
+				8D38EB79297444D400669EC9 /* Extension.swift */,
 				8D472653296CDE9E00157E57 /* SceneDelegate.swift */,
 			);
 			path = Resources;
@@ -301,9 +304,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D472661296CDE9F00157E57 /* LaunchScreen.storyboard in Resources */,
+				8D38EB7E2974470800669EC9 /* GoogleService-Info.plist in Resources */,
 				8D47265E296CDE9F00157E57 /* Assets.xcassets in Resources */,
 				8D472659296CDE9E00157E57 /* Main.storyboard in Resources */,
-				8D38EB7029739D4E00669EC9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +382,7 @@
 				8D38EB4D29737B6700669EC9 /* NotificationViewController.swift in Sources */,
 				8D96B4E2296F8EAE0061DC38 /* ImagePicker.swift in Sources */,
 				8D38EB4F29737B6F00669EC9 /* ProfileViewController.swift in Sources */,
+				8D38EB7A297444D400669EC9 /* Extension.swift in Sources */,
 				8DCF9FB4296D11D00047E111 /* SignUpView.swift in Sources */,
 				8D47265C296CDE9E00157E57 /* Instaclone.xcdatamodeld in Sources */,
 				8D38EB742973AAD000669EC9 /* AuthManager.swift in Sources */,
