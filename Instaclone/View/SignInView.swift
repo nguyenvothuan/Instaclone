@@ -10,6 +10,8 @@ import SwiftUI
 struct SignInView: View {
     @State private var email: String = ""
     @State private var password: String = ""
+    @State private var passwordFailed: Bool = false
+    @State private var emailFailed: Bool = false
     var body: some View {
         NavigationView {
             VStack (spacing:20){
@@ -19,9 +21,23 @@ struct SignInView: View {
                     Text("Sign in to continue")
                     
                 }
-                FormField(value: $email, icon: "envelope.fill", placeholder: "Email")
-                FormField(value: $password, icon: "lock.fill", placeholder: "Password", isSecure: true)
-                Button(action: {}) {
+                FormField(value: $email, icon: "envelope.fill", placeholder: "Email", isError: emailFailed)
+                FormField(value: $password, icon: "lock.fill", placeholder: "Password", isSecure: true, isError: passwordFailed)
+                Button(action: {
+                    if email.isEmpty || !isValidEmail(email: email){
+                        emailFailed = true
+                        return
+                    }
+                    if password.isEmpty {
+                        passwordFailed = true
+                        return
+                    }
+                    emailFailed = false
+                    passwordFailed = false
+                    
+                    
+                    
+                }) {
                     Text("Sign In").font(.title).modifier(ButtonModifier())
                 }
                 HStack {
