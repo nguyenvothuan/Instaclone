@@ -20,8 +20,19 @@ class LoginViewController: UIViewController {
 }
 
 private extension LoginViewController {
+    
     func addSignInView() {
-        let signInView = SignInView()
+        func onSuccess () {
+            self.dismiss(animated: true, completion: nil)
+        }
+        func onError() {
+            let alert = UIAlertController(title: "Log In Error", message: "Wrong Credentials", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+            print("shit")
+            present(alert, animated: true)
+        }
+        
+        let signInView = SignInView(onSuccess: onSuccess, onError: onError)
         let controller = UIHostingController(rootView: signInView)
         addChild(controller)
         controller.view.translatesAutoresizingMaskIntoConstraints = false
@@ -34,5 +45,6 @@ private extension LoginViewController {
             controller.view.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             controller.view.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
+
     }
 }

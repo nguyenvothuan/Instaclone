@@ -12,6 +12,8 @@ struct SignInView: View {
     @State private var password: String = ""
     @State private var passwordFailed: Bool = false
     @State private var emailFailed: Bool = false
+    var onSuccess: ()->()
+    var onError: ()->()
     var body: some View {
         NavigationView {
             VStack (spacing:20){
@@ -35,7 +37,18 @@ struct SignInView: View {
                     emailFailed = false
                     passwordFailed = false
                     
-                    
+                    AuthManager.shared.loginUser(email: email, password: password) { success in
+                        DispatchQueue.main.async {
+                            if success {
+                                self.onSuccess()
+                            }
+                            else {
+                                self.onError()
+                                
+                            }
+                        }
+                        
+                    }
                     
                 }) {
                     Text("Sign In").font(.title).modifier(ButtonModifier())
@@ -51,9 +64,9 @@ struct SignInView: View {
     }
 }
 
-
-struct SignInView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignInView()
-    }
-}
+//
+//struct SignInView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SignInView()
+//    }
+//}

@@ -18,7 +18,9 @@ struct SignUpView: View {
     @State private var showingActionSheet = false
     @State private var showingImagePicker = false
     @State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
-    
+    @State private var passwordFailed: Bool = false
+    @State private var emailFailed: Bool = false
+    @State private var usernameFailed: Bool = false
     func loadImage() {
         let inputImage = pickedImage
         profileImage = inputImage
@@ -55,7 +57,34 @@ struct SignUpView: View {
                         FormField(value: $email, icon: "envelope.fill", placeholder: "Email")
                         FormField(value: $password, icon: "lock.fill", placeholder: "Password", isSecure: true)
                     }
-                    Button(action: {}) {
+                    Button(action: {
+                        if email.isEmpty || !isValidEmail(email: email){
+                            emailFailed = true
+                            return
+                        }
+                        if password.isEmpty {
+                            passwordFailed = true
+                            return
+                        }
+                        if username.isEmpty {
+                            usernameFailed = true
+                            return
+                        }
+                        usernameFailed = false
+                        emailFailed = false
+                        passwordFailed = false
+                        AuthManager.shared.registerNewUser(username: username, email: email, password: password) { registered in
+                            DispatchQueue.main.async {
+                                if registered {
+                                    print("shit")
+                                } else {
+                                    print("trash")
+                                }
+                            }
+                        }
+                        
+                        
+                    }) {
                         Text("Sign Up").font(.title).modifier(ButtonModifier())
                     }
                     HStack {
@@ -93,3 +122,5 @@ struct SignUpView: View {
         }
     }
 }
+
+

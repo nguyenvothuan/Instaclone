@@ -12,7 +12,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         handleNotAuthenticated()
     }
     
@@ -23,6 +22,7 @@ class HomeViewController: UIViewController {
             loginVC.modalPresentationStyle = .fullScreen
             present(loginVC, animated: false)
         }
+        
     }
     
     
