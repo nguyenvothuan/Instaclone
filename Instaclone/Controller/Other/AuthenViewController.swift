@@ -7,7 +7,7 @@
 
 import UIKit
 import SwiftUI
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
 }
 
-private extension ViewController {
+private extension LoginViewController {
     func addSignInView() {
         let signInView = SignInView()
         let controller = UIHostingController(rootView: signInView)
