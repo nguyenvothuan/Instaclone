@@ -7,6 +7,8 @@ target 'Instaclone' do
 
   # Pods for Instaclone
 pod 'Appirater'
+pod 'SDWebImage'
+
 pod 'Firebase/Core' 
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
