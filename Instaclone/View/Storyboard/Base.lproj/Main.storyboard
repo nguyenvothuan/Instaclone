@@ -31,11 +31,11 @@
             </objects>
             <point key="canvasLocation" x="-156" y="-499"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="Ppu-WO-8Fz">
             <objects>
                 <navigationController id="A6c-dh-SeR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="house" catalog="system" id="Hmw-NS-tOv"/>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="Hmw-NS-tOv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nCP-us-ApN">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -82,11 +82,11 @@
             </objects>
             <point key="canvasLocation" x="1563" y="356"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="RGc-7n-mkY">
             <objects>
                 <navigationController id="uWO-oA-Vj5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="bell" catalog="system" id="agW-LE-E6c"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="agW-LE-E6c"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="acc-qS-k7x">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -116,11 +116,11 @@
             </objects>
             <point key="canvasLocation" x="-155" y="356"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="oeF-xW-NSm">
             <objects>
                 <navigationController id="R6E-8b-fFD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="globe" catalog="system" id="SoT-0g-Gdb"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="SoT-0g-Gdb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4mx-xY-t3m">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -215,9 +215,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell" catalog="system" width="125" height="128"/>
-        <image name="globe" catalog="system" width="128" height="123"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="house" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">

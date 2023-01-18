@@ -1,8 +1,9 @@
 //
 //  SearchResultViewController.swift
-//  Instaclone
+//  Instagram
 //
-//  Created by Nguyen Vo Thuan on 1/15/23.
+//  Created by Afraz Siddiqui on 8/14/20.
+//  Copyright © 2020 ASN GROUP LLC. All rights reserved.
 //
 
 import UIKit

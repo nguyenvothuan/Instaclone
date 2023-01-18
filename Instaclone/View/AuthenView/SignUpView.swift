@@ -21,6 +21,7 @@ struct SignUpView: View {
     @State private var passwordFailed: Bool = false
     @State private var emailFailed: Bool = false
     @State private var usernameFailed: Bool = false
+    var registerCallBack: (Bool) -> Void
     func loadImage() {
         let inputImage = pickedImage
         profileImage = inputImage
@@ -75,11 +76,12 @@ struct SignUpView: View {
                         passwordFailed = false
                         AuthManager.shared.registerNewUser(username: username, email: email, password: password) { registered in
                             DispatchQueue.main.async {
-                                if registered {
-                                    print("shit")
-                                } else {
-                                    print("trash")
-                                }
+//                                if registered {
+//                                    print("shit")
+//                                } else {
+//                                    print("trash")
+//                                }
+                                registerCallBack(registered)
                             }
                         }
                         
@@ -116,11 +118,7 @@ struct SignUpView: View {
         
     }
     
-    struct SignUpView_Previews: PreviewProvider {
-        static var previews: some View {
-            SignUpView()
-        }
-    }
+
 }
 
 

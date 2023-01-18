@@ -22,6 +22,7 @@ public class DatabaseManager {
             } else {
                 completion(false)
             }
+            return
         })
     }
     

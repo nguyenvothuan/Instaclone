@@ -14,6 +14,7 @@ struct SignInView: View {
     @State private var emailFailed: Bool = false
     var onSuccess: ()->()
     var onError: ()->()
+    var registerCallBack: (Bool) -> ()
     var body: some View {
         NavigationView {
             VStack (spacing:20){
@@ -55,7 +56,7 @@ struct SignInView: View {
                 }
                 HStack {
                     Text("New?")
-                    NavigationLink (destination: SignUpView()){
+                    NavigationLink (destination: SignUpView(registerCallBack: registerCallBack)){
                         Text("Create an account").font(.system(size: 20, weight: .semibold)).foregroundColor(.black)
                     }
                 }

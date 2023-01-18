@@ -31,8 +31,17 @@ private extension LoginViewController {
             print("shit")
             present(alert, animated: true)
         }
+        func registerCallBack(registered: Bool) {
+            if registered {
+                self.dismiss(animated: true, completion: nil)
+            } else {
+                let alert = UIAlertController(title: "Log In Error", message: "Wrong Credentials", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                present(alert, animated: true)
+            }
+        }
         
-        let signInView = SignInView(onSuccess: onSuccess, onError: onError)
+        let signInView = SignInView(onSuccess: onSuccess, onError: onError, registerCallBack: registerCallBack)
         let controller = UIHostingController(rootView: signInView)
         addChild(controller)
         controller.view.translatesAutoresizingMaskIntoConstraints = false
